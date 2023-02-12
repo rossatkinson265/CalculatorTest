@@ -1,0 +1,51 @@
+<div class="calculatorContainer">
+  <div class="calculatorHeader modal-header">
+    <div class="calculatorTitleContainer">
+      <div class="calculatorTitle">
+        Simple Calculator
+      </div>
+    </div>
+    <div class="calculatorSettingsContainer">
+      <div class="calculatorSettingsButton">
+        <span class="material-symbols-outlined settingsCog" (click)="OpenSettings()">
+          settings
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="calculatorGrid">
+    <div class="operationDisplayContainer">
+      <div class="tempTotalDisplay">
+        <div *ngIf="showRunningTotal" class="tempTotalLabel">{{runningTotal}}</div>
+      </div>
+      <div class="operationDisplay">
+        <div class="operationLabel">{{firstNumString + ' ' + firstOperator + ' ' + secondNumString}}</div>
+      </div>
+    </div>
+    <div class="controlsGrid">
+      <div class="numbersGrid">
+        <div *ngFor="let number of simpleNumbers" class="numberContainer" [class]="'number'+(number)" (click)="AppendNumber(number)">
+        <div class="numberButton">{{number}}</div>
+        </div>
+        <div class="backSpaceContainer" click="Backspace()">
+            <span class="material-symbols-outlined backSpaceButton">
+              backspace
+            </span>
+        </div>        
+      </div>
+      <div class="operatorsGrid">
+        <div class="clearAllContainer" (click)="ClearAll()">
+          <div class="clearAllButton">Clear</div>
+        </div>
+        <div *ngFor="let operator of simpleOperators; index as i" class="operatorContainer" (click)="ImplementOperator(operator)">
+          <div class="operatorButton">{{operator}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="calculatorFooter modal-footer">
+    <div class="closeButtonContainer">
+      <div class="closeButton button" (click)="CloseSelf()">Close</div>
+    </div>
+  </div> 
+</div>

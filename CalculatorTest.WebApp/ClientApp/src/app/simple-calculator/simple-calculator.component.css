@@ -1,0 +1,126 @@
+.calculatorContainer {
+  display: grid;
+  height: 80vh;
+  grid-template-rows: 10% 80% 10%;
+  background-color: var(--background-shades);
+  color: var(--contrast-shades);
+}
+
+.calculatorHeader {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.calculatorTitleContainer, .calculatorSettingsContainer {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.calculatorTitle {
+  align-self: center;
+  justify-self: start;
+  padding-left: 5%;
+}
+
+.calculatorSettingsButton {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.settingsCog {
+  align-self: center;
+  justify-self: end;
+  padding-right: 5%;
+  cursor: pointer;
+}
+
+  .settingsCog:hover {
+    color: var(--contrast-accent);
+  }
+
+.calculatorFooter, .closeButtonContainer {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.calculatorGrid {
+  display: grid;
+  grid-template-rows: 35% 65%;
+  align-self: stretch;
+  justify-self: stretch;
+  margin: 2%;
+  grid-row-gap: 1%;
+}
+
+.operationDisplayContainer {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+  grid-template-rows: 35% 65%;
+  margin: 1%;
+  grid-row-gap: 2%
+}
+
+.tempTotalDisplay, .operationDisplay {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+  background-color: var(--main-brand-colour);
+  border-radius: 1%;
+  box-shadow: rgb(0 0 0 / 35%) 0px 0.5vmin 1.5vmin;
+}
+
+.tempTotalLabel, .operationLabel {
+  align-self: stretch;
+  justify-self: end;
+  padding-right: 2%;
+}
+
+.controlsGrid {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+  grid-template-columns: 75% 25%;
+}
+
+.numbersGrid {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.operatorsGrid {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+  grid-template-columns: auto;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.numberContainer, .backSpaceContainer, .clearAllContainer, .operatorContainer {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+  cursor: pointer;
+  margin: 3%;
+  border-radius: 5%;
+  background-color: var(--main-accent);
+  color: var(--contrast-shades);
+  box-shadow: rgb(0 0 0 / 35%) 0px 0.5vmin 1.5vmin;
+}
+
+.numberButton, .backSpaceButton, .clearAllButton, .operatorButton {
+  align-self: center;
+  justify-self: center;
+}
+
+.number0 {
+  grid-column: 2;
+}

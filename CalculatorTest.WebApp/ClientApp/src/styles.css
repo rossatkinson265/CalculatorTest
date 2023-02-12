@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*Themes*/
+:root {
+  /* Colors */
+  --background-shades: #F5F5F3;
+  --main-accent: #B17F4C;
+  --main-brand-colour: #8A9DA8;
+  --contrast-accent: #866357;
+  --contrast-shades: #383D40;
+}
+
+body {
+  background: var(--background-shades);
+}
+/*End of themes*/
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/Poppins-Regular.ttf');
+}
+
+* {
+  font-family: 'Poppins';
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48
+}
+
+.calculatorModal {
+  display: grid;
+}
+
+  .calculatorModal .modal-content {
+    width: 95%;
+    align-self: center;
+    justify-self: center;
+  }
+
+.errorModal, .settingsModal {
+  padding: 3%;
+}
+
+.modal-header, .modal-footer {
+  justify-content: center;
+  padding: 0;
+}
+
+.button {
+  background-color: var(--main-brand-colour);
+  align-self: center;
+  justify-self: center;
+  padding: 10% 20%;
+  border-radius: 5%;
+  text-align: center;
+  color: var(--contrast-shades);
+  box-shadow: rgb(0 0 0 / 35%) 0px 0.5vmin 1.5vmin;
+  cursor: pointer;
+}
+
+  .button:hover {
+    background-color: var(--contrast-accent);
+  }
+
+.material-symbols-outlined {
+  font-size: 1.5rem;
+}

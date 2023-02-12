@@ -1,0 +1,27 @@
+.errorGridContainer {
+  display: grid;
+  grid-template-rows: 30% 45% 25%;
+  height: 30vh;
+}
+
+.errorHeaderContainer, .errorBodyContainer, .closeButtonContainer {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.errorHeaderLabel, .errorBodyLabel {
+  align-self: center;
+  justify-self: stretch;
+  text-align: center;
+}
+
+.errorHeaderContainer {
+  background-color: var(--main-brand-colour);
+  color: var(--contrast-shades);
+}
+
+.errorBodyContainer, .closeButtonContainer {
+  background-color: var(--background-shades);
+  color: var(--contrast-shades);
+}

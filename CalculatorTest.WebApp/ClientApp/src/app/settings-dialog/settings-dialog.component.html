@@ -1,0 +1,32 @@
+<div class="settingsModalGrid">
+  <div class="settingsHeaderGrid modal-header">
+    <div class="settingsHeader">Settings</div>
+  </div>
+  <div class="settingsContainerGrid">
+    <div class="lightDarkToggleGrid">
+      <div class="toggleContainer lightButtonContainer">
+        <div class="toggleButton lightToggleButton" [class.toggleSelected]="inLightMode" (click)="ModeSelected('LIGHT')">
+          <span class="material-symbols-outlined toggleLabel lightLabel">light_mode</span>
+        </div>
+      </div>
+      <div class="toggleContainer darkButtonContainer">
+        <div class="toggleButton darkToggleButton" [class.toggleSelected]="inDarkMode" (click)="ModeSelected('DARK')">
+          <span class="material-symbols-outlined toggleLabel darkLabel">dark_mode</span>
+        </div>
+      </div>
+    </div>
+    <div class="themeSelectionGrid">     
+      <div ngbDropdown class="themeDropdown">
+        <div class="openDropdownButton" ngbDropdownToggle>
+          {{selectedTheme.themeName}}
+        </div>
+        <div ngbDropdownMenu>
+          <div *ngFor="let theme of allThemeNames" ngbDropdownItem (click)="ThemeSelected(theme)">{{theme}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="settingsFooterGrid modal-footer">
+    <div class="closeButton button" (click)="CloseSelf()">Close</div>
+  </div>
+</div>

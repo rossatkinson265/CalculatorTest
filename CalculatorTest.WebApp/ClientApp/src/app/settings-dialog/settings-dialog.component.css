@@ -1,0 +1,91 @@
+.settingsModalGrid {
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+  height: 50vh;
+  background-color: var(--background-shades);
+  color: var(--contrast-shades);
+}
+
+.settingsHeaderGrid, .settingsFooterGrid {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.settingsHeader {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.settingsContainerGrid {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+  grid-template-rows: 35% 65%;
+}
+
+.lightDarkToggleGrid {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+  grid-template-columns: 50% 50%;
+}
+
+.toggleContainer {
+  display: grid;
+  align-self: center;
+  justify-self: stretch;
+}
+
+.toggleButton {
+  display: grid;
+  align-self: stretch;
+  padding: 5% 20%;
+  box-shadow: rgb(0 0 0 / 35%) 0px 0.5vmin 1.5vmin;
+  cursor: pointer;
+  background-color: lightgray;
+  opacity: 75%;
+}
+
+.toggleSelected {
+  background-color: var(--main-brand-colour);
+  opacity: 100%;
+}
+
+.lightToggleButton {
+  align-self: stretch;
+  justify-self: end;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+.darkToggleButton {
+  align-self: stretch;
+  justify-self: start;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.toggleLabel {
+  align-self: center;
+  text-align: center;
+}
+
+.themeSelectionGrid, .themeDropdown {
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.openDropdownButton {
+  align-self: center;
+  justify-self: center;
+  width: 50%;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 35%) 0px 0.5vmin 1.5vmin;
+  background-color: var(--main-brand-colour);
+  border-radius: 2%;
+  cursor: pointer;
+  padding: 5%;
+}
