@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CalculatorTest.CalculatorLogic/bin/Debug/net7.0
+/CalculatorTest.CalculatorLogic/obj
+/CalculatorTest.UnitTests/bin/Debug/net7.0
+/CalculatorTest.UnitTests/obj
+/CalculatorTest.WebApp/ClientApp/.angular/cache/15.1.5
