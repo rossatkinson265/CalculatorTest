@@ -7,3 +7,17 @@
 /CalculatorTest.UnitTests/bin/Debug/net7.0
 /CalculatorTest.UnitTests/obj
 /CalculatorTest.WebApp/ClientApp/.angular/cache/15.1.5
+/CalculatorTest.CalculatorLogic/bin/Release/net7.0
+/.vs/ProjectEvaluation
+/.vs/CalculatorTest/DesignTimeBuild
+*.vsidx
+/.vs/CalculatorTest/FileContentIndex/46cf7374-3f0c-45a8-833e-a2094b1c7d5d.vsidx
+/.vs/CalculatorTest/FileContentIndex/64fbeb76-94cc-43ab-8391-ad2a8745c1f0.vsidx
+/.vs/CalculatorTest/v17/TestStore/0/000.testlog
+/.vs/CalculatorTest/v17/TestStore/0
+*.v2
+/.vs/CalculatorTest/v17/fileList.bin
+/.vs/CalculatorTest/v17/.suo
+/.vs/CalculatorTest/FileContentIndex/46cf7374-3f0c-45a8-833e-a2094b1c7d5d.vsidx
+/.vs/CalculatorTest/FileContentIndex/64fbeb76-94cc-43ab-8391-ad2a8745c1f0.vsidx
+/.vs/CalculatorTest/v17/.suo

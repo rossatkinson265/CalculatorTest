@@ -27,7 +27,7 @@
         <div *ngFor="let number of simpleNumbers" class="numberContainer" [class]="'number'+(number)" (click)="AppendNumber(number)">
         <div class="numberButton">{{number}}</div>
         </div>
-        <div class="backSpaceContainer" click="Backspace()">
+        <div class="backSpaceContainer" (click)="Backspace()">
             <span class="material-symbols-outlined backSpaceButton">
               backspace
             </span>
